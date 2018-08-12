@@ -1,17 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Parcial1_logic.OOP;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Parcial1_logic.OOP.Tests
 {
     [TestClass()]
     public class OOPUnitTest
     {
-
         private readonly Hero testHero01 = new Hero(10, 5);
 
         private readonly Gear testWeapon01 = new Weapon(0.5F);
