@@ -76,15 +76,6 @@ namespace Parcial1_logic.Tests
         }
 
         [TestMethod()]
-        public void FoundWithBinarySearchTest()
-        {
-            Assert.AreEqual(false, to.FoundWithBinarySearch(testQueue01.ToList(), 45));
-            Assert.AreEqual(true, to.FoundWithBinarySearch(testQueue01.ToList(), 10));
-            Assert.AreEqual(false, to.FoundWithBinarySearch(testQueue01.ToList(), 120));
-            Assert.AreEqual(true, to.FoundWithBinarySearch(testQueue03.ToList(), 120));
-        }
-
-        [TestMethod()]
         public void InverseStackTest()
         {
             CollectionAssert.AreEqual(invertedStack02, to.InverseStack(testStack01));
