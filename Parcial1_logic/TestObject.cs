@@ -32,7 +32,15 @@ namespace Parcial1_logic
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
 
-            return null;
+            Queue<int> result = new Queue<int>();
+
+            while (inputQueue.Count > 0)
+            {
+                int currentVal = inputQueue.Dequeue();
+                result.Enqueue(currentVal == lookupValue ? replaceValue : currentVal);
+            }
+
+            return result;
         }
 
         /// <summary>
@@ -43,7 +51,14 @@ namespace Parcial1_logic
         public Stack<string> InverseStack(Stack<string> stack)
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
-            return null;
+            Stack<string> result = new Stack<string>();
+
+            while (stack.Count > 0)
+            {
+                result.Push(stack.Pop());
+            }
+
+            return result;
         }
 
         /// <summary>
@@ -56,7 +71,22 @@ namespace Parcial1_logic
         public List<string> MixData(Stack<string> stack, Queue<string> queue)
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
-            return null;
+            List<string> result = new List<string>();
+
+            int count = stack.Count;
+
+            if (queue.Count < count)
+            {
+                count = queue.Count;
+            }
+
+            for (int i = 0; i < count; i++)
+            {
+                result.Add(stack.Pop());
+                result.Add(queue.Dequeue());
+            }
+
+            return result;
         }
 
         /// <summary>
@@ -69,7 +99,17 @@ namespace Parcial1_logic
         /// <returns></returns>
         public int RepeatedTimesInDictionary<Type1, Type2>(Dictionary<Type1, Type2> dict, Type2 lookupValue)
         {
-            return -1;
+            int result = 0;
+
+            foreach (KeyValuePair<Type1, Type2> item in dict)
+            {
+                if (item.Value.Equals(lookupValue))
+                {
+                    result++;
+                }
+            }
+
+            return result;
         }
 
         #endregion DATA_STRUCTURES
