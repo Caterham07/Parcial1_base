@@ -11,7 +11,7 @@ namespace Parcial1_logic.OOP.Tests
     [TestClass()]
     public class OOPUnitTest
     {
-        /*
+
         private readonly Hero testHero01 = new Hero(10, 5);
 
         private readonly Gear testWeapon01 = new Weapon(0.5F);
@@ -22,7 +22,7 @@ namespace Parcial1_logic.OOP.Tests
 
         private readonly Enemy testEnemy01 = new Enemy(4, 2);
 
-        private readonly KeyValuePair<float, float> testParams01 = new KeyValuePair<float, float>(4,2);
+        private readonly KeyValuePair<float, float> testParams01 = new KeyValuePair<float, float>(4, 2);
         private readonly KeyValuePair<float, float> testParams02 = new KeyValuePair<float, float>(15, 6.25F);
         private readonly KeyValuePair<float, float> testParams03 = new KeyValuePair<float, float>(10, 5);
 
@@ -62,6 +62,6 @@ namespace Parcial1_logic.OOP.Tests
             testHero01.Equip(testArmor01);
 
             Assert.AreEqual(testParams02, oopt.GetActorParams(testHero01));
-        }*/
+        }
     }
 }
